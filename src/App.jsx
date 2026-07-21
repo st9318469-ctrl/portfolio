@@ -1,10 +1,10 @@
 import React from 'react'
 import Navbar from "./assets/components/Navbar.jsx";
 import Home from './assets/components/Home.jsx';
-import Skills from "./components/Skills.jsx";
+import Skills from "./assets/Skills.jsx";
 import Project from './assets/components/Project.jsx';
 import About from './assets/components/About.jsx';
-import ContactMe from './assets/components/contactme.jsx';
+import ContactMe from './assets/components/ContactMe.jsx';
 
 
 
