@@ -7,15 +7,15 @@ export default function Navbar() {
 
   return (
     <nav className="fixed left-0 top-0 z-50 w-full border-b border-cyan-300/20 bg-slate-950/75 shadow-[0_18px_45px_rgba(8,145,178,0.16)] backdrop-blur-xl [perspective:1000px]">
-      <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
+      <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-4 sm:px-6 lg:px-8">
         <a
           href="#home"
-          className="text-2xl font-bold text-white transition duration-300 [transform-style:preserve-3d] hover:[transform:translateY(-2px)_rotateX(12deg)]"
+          className="text-xl font-bold text-white transition duration-300 [transform-style:preserve-3d] hover:[transform:translateY(-2px)_rotateX(12deg)] sm:text-2xl"
         >
           Port<span className="text-cyan-400">folio</span>
         </a>
 
-        <div className="hidden items-center gap-8 md:flex">
+        <div className="hidden items-center gap-3 md:flex lg:gap-8">
           {links.map((link) => (
             <a
               key={link}
@@ -44,7 +44,7 @@ export default function Navbar() {
       </div>
 
       {open && (
-        <div className="border-t border-cyan-300/20 bg-slate-950/95 px-6 py-4 shadow-[0_18px_40px_rgba(8,145,178,0.18)] md:hidden">
+        <div className="border-t border-cyan-300/20 bg-slate-950/95 px-4 py-4 shadow-[0_18px_40px_rgba(8,145,178,0.18)] sm:px-6 md:hidden">
           <div className="flex flex-col gap-4">
             {links.map((link) => (
               <a

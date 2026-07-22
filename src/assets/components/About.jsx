@@ -1,19 +1,19 @@
 export default function About() {
   return (
-    <section id="about" className="bg-slate-950 px-6 py-24 text-white">
+    <section id="about" className="bg-slate-950 px-4 py-16 text-white sm:px-6 sm:py-24 lg:px-8">
       <div className="mx-auto grid max-w-6xl items-center gap-12 md:grid-cols-2">
-        <div className="relative">
+        <div className="relative mx-auto w-full max-w-sm md:max-w-none">
           <div className="absolute -inset-4 rounded-[2rem] bg-gradient-to-br from-cyan-400/30 to-fuchsia-500/30 blur-2xl" />
 
-          <div className="relative rounded-[2rem] border border-white/10 bg-slate-900 p-6 shadow-2xl">
-            <div className="aspect-square rounded-[1.5rem] bg-gradient-to-br from-slate-800 to-slate-950 p-8">
+          <div className="relative rounded-[2rem] border border-white/10 bg-slate-900 p-4 shadow-2xl sm:p-6">
+            <div className="aspect-square rounded-[1.5rem] bg-gradient-to-br from-slate-800 to-slate-950 p-5 sm:p-8">
               <div className="flex h-full flex-col justify-between">
                 <div>
-                  <div className="mb-6 flex h-20 w-20 items-center justify-center rounded-3xl bg-cyan-400/20 text-3xl font-black text-cyan-300">
+                  <div className="mb-6 flex h-16 w-16 items-center justify-center rounded-3xl bg-cyan-400/20 text-2xl font-black text-cyan-300 sm:h-20 sm:w-20 sm:text-3xl">
                     ST
                   </div>
 
-                  <h3 className="text-3xl font-bold">FULL STACK Developer</h3>
+                  <h3 className="text-2xl font-bold sm:text-3xl">FULL STACK Developer</h3>
 
                   <p className="mt-4 leading-7 text-slate-400">
                     I enjoy turning ideas into clean, responsive, and beautiful
@@ -38,11 +38,11 @@ export default function About() {
         </div>
 
         <div>
-          <p className="mb-3 text-sm font-semibold uppercase tracking-[0.3em] text-cyan-300">
+          <p className="mb-3 text-xs font-semibold uppercase tracking-[0.24em] text-cyan-300 sm:text-sm sm:tracking-[0.3em]">
             About Me
           </p>
 
-          <h2 className="text-4xl font-black tracking-tight md:text-5xl">
+          <h2 className="text-3xl font-black tracking-tight sm:text-4xl md:text-5xl">
             I Build Websites That Look Good And Work Smoothly
           </h2>
 

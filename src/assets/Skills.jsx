@@ -27,14 +27,14 @@ const skillHighlights = [
 
 export default function Skills() {
   return (
-    <section id="skills" className="bg-slate-950 px-6 py-24 text-white">
+    <section id="skills" className="bg-slate-950 px-4 py-16 text-white sm:px-6 sm:py-24 lg:px-8">
       <div className="mx-auto max-w-6xl">
         <div className="mb-14 text-center">
-          <p className="mb-3 text-sm font-semibold uppercase tracking-[0.3em] text-cyan-300">
+          <p className="mb-3 text-xs font-semibold uppercase tracking-[0.24em] text-cyan-300 sm:text-sm sm:tracking-[0.3em]">
             My Skills
           </p>
 
-          <h2 className="text-4xl font-black tracking-tight md:text-5xl">
+          <h2 className="text-3xl font-black tracking-tight sm:text-4xl md:text-5xl">
             Technologies I Work With
           </h2>
 
@@ -49,7 +49,7 @@ export default function Skills() {
           {skills.map((skill) => (
             <div
               key={skill.name}
-              className="rounded-3xl border border-white/10 bg-white/[0.04] p-6 shadow-xl shadow-black/10 transition hover:-translate-y-1 hover:border-cyan-400/40"
+              className="rounded-3xl border border-white/10 bg-white/[0.04] p-5 shadow-xl shadow-black/10 transition hover:-translate-y-1 hover:border-cyan-400/40 sm:p-6"
             >
               <div className="mb-3 flex items-center justify-between">
                 <h3 className="text-lg font-bold">{skill.name}</h3>

@@ -39,14 +39,14 @@ export default function ContactMe() {
   };
 
   return (
-    <section id="contact" className="bg-slate-950 px-6 py-24 text-white">
+    <section id="contact" className="bg-slate-950 px-4 py-16 text-white sm:px-6 sm:py-24 lg:px-8">
       <div className="mx-auto max-w-6xl">
         <div className="mb-14 text-center">
-          <p className="mb-3 text-sm font-semibold uppercase tracking-[0.3em] text-cyan-300">
+          <p className="mb-3 text-xs font-semibold uppercase tracking-[0.24em] text-cyan-300 sm:text-sm sm:tracking-[0.3em]">
             Contact
           </p>
 
-          <h2 className="text-4xl font-black tracking-tight md:text-5xl">
+          <h2 className="text-3xl font-black tracking-tight sm:text-4xl md:text-5xl">
             Let's Work Together
           </h2>
 
@@ -57,8 +57,8 @@ export default function ContactMe() {
         </div>
 
         <div className="grid gap-8 md:grid-cols-2">
-          <div className="rounded-3xl border border-white/10 bg-white/[0.04] p-8">
-            <h3 className="text-2xl font-bold">Get In Touch</h3>
+          <div className="rounded-3xl border border-white/10 bg-white/[0.04] p-5 sm:p-8">
+            <h3 className="text-xl font-bold sm:text-2xl">Get In Touch</h3>
 
             <p className="mt-4 leading-7 text-slate-400">
               I'm open to freelance projects, internships, collaborations, and
@@ -95,7 +95,7 @@ export default function ContactMe() {
 
           <form
             onSubmit={handleSubmit}
-            className="rounded-3xl border border-white/10 bg-white/[0.04] p-8 shadow-xl shadow-black/10"
+            className="rounded-3xl border border-white/10 bg-white/[0.04] p-5 shadow-xl shadow-black/10 sm:p-8"
           >
             <div className="grid gap-5">
               <input

@@ -30,14 +30,14 @@ const projects = [
 
 export default function Projects() {
   return (
-    <section id="projects" className="bg-slate-950 px-6 py-24 text-white">
+    <section id="projects" className="bg-slate-950 px-4 py-16 text-white sm:px-6 sm:py-24 lg:px-8">
       <div className="mx-auto max-w-6xl">
         <div className="mb-14 text-center">
-          <p className="mb-3 text-sm font-semibold uppercase tracking-[0.3em] text-cyan-300">
+          <p className="mb-3 text-xs font-semibold uppercase tracking-[0.24em] text-cyan-300 sm:text-sm sm:tracking-[0.3em]">
             My Work
           </p>
 
-          <h2 className="text-4xl font-black tracking-tight md:text-5xl">
+          <h2 className="text-3xl font-black tracking-tight sm:text-4xl md:text-5xl">
             Featured Projects
           </h2>
 
@@ -60,11 +60,11 @@ export default function Projects() {
                 <img
                   src={project.image}
                   alt={project.title}
-                  className="h-52 w-full object-cover"
+                  className="h-44 w-full object-cover sm:h-52"
                 />
 
-                <div className="p-6">
-                  <h3 className="text-2xl font-bold">{project.title}</h3>
+                <div className="p-5 sm:p-6">
+                  <h3 className="text-xl font-bold sm:text-2xl">{project.title}</h3>
 
                   <p className="mt-3 text-sm leading-6 text-slate-400">
                     {project.description}
