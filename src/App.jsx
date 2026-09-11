@@ -497,7 +497,11 @@ function ContactSection() {
     };
 
     try {
-      const apiUrl = import.meta.env.VITE_CONTACT_API_URL || '/api/contact';
+      const configuredApiUrl = import.meta.env.VITE_CONTACT_API_URL || '/api/contact';
+      const isLocalPage = ['localhost', '127.0.0.1'].includes(window.location.hostname);
+      const apiUrl = !isLocalPage && configuredApiUrl.includes('localhost')
+        ? '/api/contact'
+        : configuredApiUrl;
       const res = await fetch(apiUrl, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
